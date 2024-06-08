@@ -1,0 +1,14 @@
+CRITICAL - 2024-06-08 15:20:19 --> Class "Config\Database" not found
+in SYSTEMPATH/Debug/Toolbar/Collectors/Database.php on line 250.
+ 1 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(70): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 2 SYSTEMPATH/Debug/Toolbar.php(66): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 3 SYSTEMPATH/Config/Services.php(714): CodeIgniter\Debug\Toolbar->__construct()
+ 4 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::toolbar()
+ 5 SYSTEMPATH/Config/BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(709): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(253): CodeIgniter\Config\Services::toolbar()
+ 8 APPPATH/Config/Events.php(46): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/Events/Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+10 SYSTEMPATH/CodeIgniter.php(326): CodeIgniter\Events\Events::trigger()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('FCPATH/index.php')
